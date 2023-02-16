@@ -27,6 +27,8 @@ public class SalaConciertoVO {
 	@ManyToOne
 	@JoinColumn(name="idconcierto")
 	private ConciertoVO concierto;
+	
+	
 	public SalaConciertoVO(SalaVO sala, ConciertoVO concierto) {
 		super();
 		this.sala = sala;

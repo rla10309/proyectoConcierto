@@ -44,10 +44,10 @@ class ProyectoConciertoApplicationTests {
 	public void test03() {
 		assertNotNull(ssc.save(new SalaConciertoVO(ss.findByNombre("La Salvaje").get(), sc.findByGrupo("Oasis").get())));
 	}
-//	//hacemos una venta
-//	@Test
-//	public void test04() {
-//		assertNotNull(sv.save(new VentaVO(LocalDate.of(2023, 2, 3), LocalTime.now(), "111", sc.findByGrupo("Oasis").get(), 2, ss.findByNombre("La Salvaje").get())));
-//	}
+	//hacemos una venta
+	@Test
+	public void test04() {
+		assertNotNull(sv.save(new VentaVO(LocalDate.of(2023, 2, 3), LocalTime.now(), "111", sc.findByGrupo("Oasis").get(), 2, ss.findByNombre("La Salvaje").get())));
+	}
 
 }
